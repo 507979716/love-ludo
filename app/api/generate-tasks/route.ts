@@ -3,11 +3,11 @@ import { NextRequest, NextResponse } from "next/server";
 // --- Configuration ---
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 // 如果环境变量 OPENROUTER_URL 没有定义或为空，则使用默认值
-const DEFAULT_URL = "https://generativelanguage.googleapis.com";
+const DEFAULT_URL = "https://openrouter.ai/api/v1/chat/completions";
 const OPENROUTER_URL = process.env.OPENROUTER_URL || DEFAULT_URL;
 const MODEL_NAME = process.env.MODEL_NAME;
 // const OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions";
-const MODEL_NAME = "gemini-2.5-pro"; // 你可以换成其他模型
+// const MODEL_NAME = "gemini-2.5-pro"; // 你可以换成其他模型
 
 // --- Type Definitions ---
 interface Preferences {
